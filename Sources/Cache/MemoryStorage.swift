@@ -50,7 +50,7 @@ public enum MemoryStorage {
         //
         // Breaking the strict tracking could save additional locking behaviors.
         // See https://github.com/onevcat/Kingfisher/issues/1233
-        var keys = Set<String>()
+        public var keys = Set<String>()
 
         private var cleanTimer: Timer? = nil
         private let lock = NSLock()
